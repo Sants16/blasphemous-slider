@@ -1,0 +1,10 @@
+/* arquivo criado para resetar os estilos padrões que vem do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}

@@ -1,0 +1,133 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-image: url(../imagens/page-background.jpg); /* pega a imagem que esta na pasta imagens */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .cabecalho .titulo {
+      color: #f1ecff;
+  }
+  
+  .cabecalho .blasphemous-icon {
+      width: 15rem;
+      height: 5rem;
+  }
+  
+  .slider-characters {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      margin: 1.25rem 0;
+  }
+  
+  .lista-characters {
+      width: 19.5rem;
+      height: 32.5rem;
+      position: relative;
+  }
+  
+  .btn-seta {
+      background-color: #FFF;
+      width: 4.375rem;
+      height: 4.375rem;
+      border-radius: 50px;
+      border: 0;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .btn-seta.btn-voltar {
+      transform: rotateY(180deg); /* rotaciona o button da seta voltar pro lado em um angulo de 180° fazendo assim a seta virar para o outro lado */
+  }
+  
+  .btn-seta:hover {
+      background-color: #9b1f16;
+  }
+  
+  .cartao {
+      background-color: blueviolet;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+  }
+  
+  .cartao.selecionado { /* colocando uma classe bem do lado da outra .classe.classe queremos dizer que o seletor sera um elemento que possua essas suas classes, e o z-index é uma propriedade de profundidade do css, ou seja, o cartão selecionado estara encima dos demais assim como cartas no barulho */
+      opacity: 1;
+      z-index: 1;
+  }
+  
+  .fundo-1, .fundo-2, .fundo-3{
+      background: url(../imagens/card-background.jpg) no-repeat;
+      background-size: cover;
+  }
+  
+  .cartao .informacoes {
+      background-color: rgba(179, 177, 185, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+  
+  .cartao .informacoes .nome {
+      color: #f1ecff;
+      font-size: 22px;
+  }
+  
+  .cartao .informacoes .symbol {
+      width: 1rem;
+      height: 2rem;
+  }
+  
+  .cartao .container-imagem {
+      text-align: center;
+  }
+  
+  .cartao .imagem-character {
+      max-width: 100%;
+      max-height: 17.5rem;
+      padding: 0.5rem;
+  }
+  
+  .cartao .descricao {
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+  
+  .cartao .descricao .titulo {
+      background-color: #333;
+      color: #f1ecff;
+      font-size: 15px;
+      padding: 12px;
+  }
+  
+  .cartao .descricao .texto {
+      font-size: 14px;
+      padding: 12px;
+      text-align: justify;
+      max-height: 115px;
+      overflow-y: auto;
+  }
+  
